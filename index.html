@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Conway's GOL</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="slider.css"/>
+    </head>
+    <body>
+        <div id="layout">
+            <div id="controls">
+                <div class="button_layout">
+                    <button id="play" class="off">Play</button>
+                    <button id="pause" class="off">Pause</button>
+                    <button id="restart" class="off" style="margin: auto;">Restart</button>
+                </div> 
+                <div id="input_layout">
+                    <div class="inner_layout">
+                        <label for="width_slider">Width</label>
+                        <input min="1" max="100" value="20" id="width_slider" name="width_slider" type="range"/>
+                        <label id="width_label" for="width_slider">20</label>                        
+                    </div>
+                    <div class="inner_layout">
+                        <label for="height_slider">Height</label>
+                        <input min="1" max="100" value="20" id="height_slider" name="height_slider" type="range"/>
+                        <label id="height_label" for="width_slider">20</label>                        
+                    </div>
+                </div>
+                <div class="inner_layout">
+                    <label for="speed_slider">FPS</label>
+                    <input min="1" max="50" value="3" id="speed_slider" name="speed_slider" type="range"/>
+                    <label id="speed_label" for="speed_slider">3</label>  
+                </div>
+                <div class="button_layout">
+                    <button id="randomize" style="margin: auto; width: 120px;"class="off" >Randomize!</button>
+                    <button class="off" style="margin: auto; width: 120px; height: 100px;" class="toroidal_button toroidal_button_off" id="toroidal_button">LET'S GET TOROIDAL!</button>
+                </div> 
+                
+            </div>
+                    
+            <div id="container"></div>
+            
+            <div id="shapes">
+
+                <div id="header_holder">
+                        <button id='shape_display' class="header_button">
+                            <h2>Shapes List</h2>
+                        </button>
+                        <button id='project_display' class="header_button">
+                            <h2>Projects List</h2>
+                        </button>
+                </div>
+
+                <div id="sidebar_hider">
+                    <div id="shape_layout">
+                            <div id="shape_holder"></div>
+                    </div>
+                </div>
+
+                <div id="project_hider">
+                        <div id="project_layout">
+                                <button id='add_project' class="add_project_button">
+                                        <h2>Projects List</h2>
+                                </button>
+                                <div id="project_holder">
+                                    
+
+                                </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

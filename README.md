@@ -1,1 +1,1 @@
-# GameOfLife
+This is my real Conway's Game of Life Implementation

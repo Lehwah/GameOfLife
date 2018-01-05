@@ -1,0 +1,211 @@
+.alive {
+    background-color: goldenrod;
+    border: 1 px solid rgb(165, 187, 206);
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+body {
+    background-color: #FBFFFE;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.borderedShape {
+    border: 3px solid rgb(170, 226, 205);
+}
+
+.button_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    width: 180px;
+    height: 200px;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    min-height: 50px;
+    max-height: 60px;
+    width: 80px;
+    color: white;
+    font-size: 16px;
+}
+
+.clicked {
+    background-color: rgb(136, 163, 184);
+}
+
+#container {
+    width: 700px;
+    height:700px;
+}
+
+#controls {
+    height: 700px;
+    width: 300px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dead {
+    background-color: #F5F3F5;
+    border: 1px solid rgb(165, 187, 206);
+    box-sizing: border-box;
+    display: inline-block;    
+}
+
+#header_holder {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.header_button {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(230, 193, 107);
+}
+
+.header_button:hover {
+    background-color: rgb(155, 192, 219);
+}
+
+.highlighted_display_button {
+    background-color: #546A7B;
+}
+
+#layout {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.on {
+    background-color: gold;
+}
+
+.off {
+    background-color: #546A7B;
+}
+
+#shapes {
+    height: 700px;
+    width: 400px;
+    background-color: beige;
+}
+
+#sidebar_hider, #project_hider {
+    overflow: hidden;
+    height: calc(100% - 40px);
+}
+
+#shape_layout, #project_layout {
+    margin-top: 10px;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    overflow: auto;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+
+#shape_holder, #project_holder {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.shape {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    background-color: #E9D985;
+}
+
+
+.project {
+    margin: auto;
+    margin-top: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: #E9D985;
+}
+
+.toroidal_button {
+    border: none;
+    border-radius: 2px;
+    height : 75px;
+    width: 120px;
+    color: white;
+    font-size: 16px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.add_project_button {
+    font-size: 14px;
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(230, 193, 107);
+}
+
+.relavtive {
+    position: relative;
+}
+
+
+.projectOverlay {
+    position: absolute; 
+    top: 20; 
+    left: 0; 
+    height: 160px; 
+    display: flex; 
+    justify-content: center; 
+    align-content: space-around; 
+    margin-top: 40px; 
+    flex-wrap: wrap; 
+    background-color: rgb(1,1,1,0);
+}
+
+
+.loadButton {
+    background-color: green; 
+    opacity: 0; 
+    width: 160px;
+}
+
+.deleteButton {
+    background: red;
+    opacity: 0; 
+    width: 160px;
+}
